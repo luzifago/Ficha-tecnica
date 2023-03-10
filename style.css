@@ -1,0 +1,26 @@
+body  {
+    background-color: rgb(104, 142, 142);
+}
+
+img {
+    filter: grayscale(50);
+    margin-right: auto;
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+table,th,td, tr {
+    border: 1px solid rgb(16, 19, 19);
+    border-collapse: collapse;
+    font-size: 1em;
+    margin: auto;
+    min-width: 50;
+    
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
