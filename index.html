@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESpecificaciones</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="js.js">
 </head>
 <body>
     <table  style="width: 50%;">
@@ -18,38 +19,38 @@
                 
         <tr><th colspan="5">Caracteristicas</th></tr>
             
-        <tr><th colspan="1">Nombre del producto:</th><th colspan="4"><input type="text"></th></tr></tr>
-        <tr><th colspan="1">Linea del producto:</th><th colspan="4"><input type="text"></th></tr> 
-        <tr><th colspan="1">Versiones anteriores:</th><th colspan="4"><input type="text"></th></tr>
-        <tr><th colspan="1">Version actual:</th><th colspan="4"><input type="text"></th></tr>
-        <tr><th colspan="1">Modulo:</th><th colspan="4"><input type="text"></th></tr>
+        <tr><th colspan="1">Nombre del producto:</th><th colspan="4"><input type="text" id="producto" placeholder="producto"></th></tr></tr>
+        <tr><th colspan="1">Linea del producto:</th><th colspan="4"><input type="text" id="Linea" placeholder="Linea"></th></tr> 
+        <tr><th colspan="1">Versiones anteriores:</th><th colspan="4"><input type="text" id="VerAnteriores" placeholder="Veranteriores"></th></tr>
+        <tr><th colspan="1">Version actual:</th><th colspan="4"><input type="text" id="VerActual" placeholder="VerActual"></th></tr>
+        <tr><th colspan="1">Modulo:</th><th colspan="4"><input type="text" id="Modulo" placeholder="Modulo"></th></tr>
        
         <tr><th colspan="5">Descripcion del producto</th></tr>
         
-        <tr><th>Descripcion general del producto:</th><th colspan="4"><input type="text"></th></tr>
-        <tr><th>Objetivos:</th><th colspan="4"><input type="text"></th></tr> 
+        <tr><th>Descripcion general del producto:</th><th colspan="4"><input type="text" id="general" placeholder="general"></th></tr>
+        <tr><th>Objetivos:</th><th colspan="4"><input type="text" id="Objetivos" placeholder="Objetivos"></th></tr> 
 
         <tr><th colspan="5">Arquitectura</th></th></tr>
-        <tr><td colspan="5"><input type="text"></td></tr>
+        <tr><td colspan="5"><input type="text" id="Arquitectura" placeholder="Arquitectura"></td></tr>
         
 
         <tr><th colspan="5">Requerimientos del producto</th></tr>
 
         <tr><th rowspan="4">Requisitos del sistema (servidor)</th></tr>
-        <tr><td>Hardware</td><th colspan="3"><input type="text"></th></tr>
-        <tr><td>Software</td><th colspan="3"><input type="text"></th></tr>
-        <tr><td>Otros</td><th colspan="3"><input type="text"></th></tr>
+        <tr><td>Hardware</td><th colspan="3"><input type="text" id="Hardware" placeholder="Hardware"></th></tr>
+        <tr><td>Software</td><th colspan="3"><input type="text" id="Software" placeholder="Software"></th></tr>
+        <tr><td>Otros</td><th colspan="3"><input type="text" id="Otros" placeholder="Otros"></th></tr>
 
         <tr><th rowspan="4">Requisitos del sistema (cliente)</th></tr>
-        <tr><td>Hardware</td><th colspan="3"><input type="text"></th></tr>
-        <tr><td>Software</td><th colspan="3"><input type="text"></th></tr>
-        <tr><td>Otros</td><th colspan="3"><input type="text"></th></tr>
+        <tr><td>Hardware</td><th colspan="3"><input type="text" id="Hardware" placeholder="Hardware"></th></tr>
+        <tr><td>Software</td><th colspan="3"><input type="text" id="Software" placeholder="Software"></th></tr>
+        <tr><td>Otros</td><th colspan="3"><input type="text" id="Otros" placeholder="Otros"></th></tr>
       
         <tr><th colspan="5">Requerimientos</th></tr>
 
-        <tr><td>Requerimientos funcionales generales</td><th colspan="4"><input type="text"></th></tr>
-        <tr><td>Requerimientos adicionales</td><th colspan="4"><input type="text"></th></tr>
-        <tr><td>Clientes del producto</td><th colspan="4"><input type="text"></th></tr>
+        <tr><td>Requerimientos funcionales generales</td><th colspan="4"><input type="text" id="R.funcionales" placeholder="R.funcionales"></th></tr>
+        <tr><td>Requerimientos adicionales</td><th colspan="4"><input type="text" id="R.adicionales" placeholder="R.adicionales"></th></tr>
+        <tr><td>Clientes del producto</td><th colspan="4"><input type="text" id="cliente" placeholder="cliente"></th></tr>
 
         <tr><th colspan="5">Historial de modificaciones</th></tr>
 
@@ -84,14 +85,24 @@
             <td>Fecha</td>
             <td>Fecha</td>
             <td colspan="2">Fecha</td>
-        </tr>   
+        </tr> 
+        <tr>
+            <td><input type="text" id="Dia/Mes/año" placeholder="Dia/Mes/Año"></td>
+            <td><input type="text" id="Dia/Mes/Año" placeholder="Dia/Mes/Año"></td>
+            <td colspan="2"><input type="text" id="Dia/Mes/Año" placeholder="Dia/Mes/Año"></td>
+        </tr>  
         
-        
-      
-          
-        
-        </tr>
     </table>
-   
+    <button onclick="comprobar()">enviar-Ficha-tecnica</button>
+    <br>
+    <br>
+    <h2 id="resultado1"></h2>
+    <h2 id="resultado2"></h2>
+    <h2 id="resultado3"></h2>
+    <h2 id="resultado4"></h2>
+    <h2 id="resultado5"></h2>
+    <h2 id="resultado6"></h2>
+
+
 </body>
 </html>
